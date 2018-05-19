@@ -1,0 +1,5 @@
+<h1>주식정보 보여주기</h1>
+
+<%= @stocks.each do |stock| %>
+ <p><%= stock.company_name %> : <%= stock.latest_price %></p>
+ <% end %>
